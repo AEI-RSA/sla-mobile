@@ -11,7 +11,7 @@ from kivy.uix.scrollview import ScrollView
 
 SLA_TABLA = {1:6, 2:8, 3:10, 4:12, 5:24, 6:48, 7:96}
 
-PERIMETRO = "PERIMETRO MAYO.xlsx"
+excel_path = "perimetro_mayo.xlsx"
 
 def obtener_datos_site(site):
     df = pd.read_excel(PERIMETRO, header=None)
