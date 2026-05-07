@@ -1,30 +1,24 @@
 [app]
 
-title = SLA Tickets
-package.name = slatickets
-package.domain = org.randy
+title = SLA Mobile
+package.name = slamobile
+package.domain = org.sla
 
 source.dir = .
-source.include_exts = py,png,jpg,kv,xlsx
-source.include_patterns = perimetro_mayo.xlsx
+source.include_exts = py,xlsx
 
 version = 1.0
 
 requirements = python3,kivy,pandas,openpyxl
 
 orientation = portrait
-fullscreen = 0
-
-# ---------- ANDROID ----------
-android.accept_sdk_license = True
-android.sdk = 33
-android.minapi = 21
-android.build_tools = 33.0.0
-
-android.permissions = READ_EXTERNAL_STORAGE,WRITE_EXTERNAL_STORAGE
-
-# ---------- BUILD ----------
-[buildozer]
 
 log_level = 2
-warn_on_root = 1
+
+android.accept_sdk_license = True
+android.sdk = 33
+android.build_tools = 33.0.0
+android.api = 33
+android.minapi = 21
+
+fullscreen = 0
